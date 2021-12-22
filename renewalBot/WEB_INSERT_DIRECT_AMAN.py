@@ -3562,7 +3562,7 @@ def get_schedule_data(pol_no,
                                        and CRR_POL_TYPE=VUW_POL_TYPE)) additional_conditions,
                            VUW_CLIENT_NO,                                                                                                                 
                            BODY_TYPE_DESC,                                      
-                           '200000513800002' tazur_vat,
+                           '200000513800002' company_vat,
                            VUW_TOTAL_PREM,                                                                                                                    
                            VUW_VAT_PCNT,
                            VUW_VAT_AMT,
@@ -3627,7 +3627,7 @@ def get_schedule_data(pol_no,
                                           ADDITIONAL_CONDITIONS,
                                           CUST_NO,  
                                           BODY_TYPE,
-                                          TAZUR_VAT,
+                                          company_vat,
                                           TOTAL_PREM,
                                           VAT_PCNT,
                                           VAT_AMT,
@@ -3699,12 +3699,12 @@ def get_schedule_data(pol_no,
 
 class HelloWorld(Resource):
     def get(self):
-        return {"about":"t'azur Chatbot Web Service!"}
+        return {"about":"Chatbot Web Service!"}
 
 class Test(Resource):
     @token_required
     def get(self):
-        return {"test":"t'azur Chatbot Web Service!"}
+        return {"test":"Chatbot Web Service!"}
 
 class Get_Egov_Status(Resource):
     @token_required

@@ -296,7 +296,7 @@ def menu_010():
     return level010.encode("utf-8")
 
 def menu_02():
-    level02 = """*t'azur Chabot only supports Bahraini mobile numbers at the moment!*"""
+    level02 = """*Company Chabot only supports Bahraini mobile numbers at the moment!*"""
     return level02
 
 def menu_03():
@@ -316,15 +316,15 @@ def menu_040():
     return level040.encode("utf-8")   
 
 def menu_001():
-    level001 = """Thank you for using t'azur chatbot. Please visit us again whenever you have a new inquiry in the future!"""
+    level001 = """Thank you for using Company chatbot. Please visit us again whenever you have a new inquiry in the future!"""
     return level001
 
 def menu_0010():
-    level0010 = """شكراً لإستخدامك خدمة المتحدث الآلي من تآزر. يرجى زيارتنا مرة أخرى كلما كان لديك استفسار جديد في المستقبل!"""
+    level0010 = """شكراً لإستخدامك خدمة المتحدث الآلي. يرجى زيارتنا مرة أخرى كلما كان لديك استفسار جديد في المستقبل!"""
     return level0010.encode("utf-8")
 
 def menu_100():
-    level100 = """Welcome to t'azur chatbot! How can I be of your help?
+    level100 = """Welcome to Company chatbot! How can I be of your help?
     
     *1.* General inquiry
     *2.* Renew my motor insurance
@@ -338,7 +338,7 @@ def menu_100():
     return level100.encode("utf-8")
 
 def menu_1000():
-    level1000 = """أهلا بك مع المتحدث الآلي من تآزر. كيف بإمكاني مساعدتك؟
+    level1000 = """أهلا بك مع المتحدث الآلي. كيف بإمكاني مساعدتك؟
     
     *١.* استعلامات عامة
     *٢.* تجديد وثيقة تأمين المركبة
@@ -365,7 +365,7 @@ def menu_720(mobile):
     myresult1 = mycursor1.fetchall()
     
     j = 0
-    level720 = """The following are your current active motor policies with t'azur:
+    level720 = """The following are your current active motor policies with Company:
     """            
     for pol in myresult1:
         if j == 10:
@@ -402,7 +402,7 @@ def menu_7200(mobile):
     myresult1 = mycursor1.fetchall()
     
     j = 0
-    level7200 = """فيما يلي تجد الوثائق الحالية الخاصة بك مع تآزر:
+    level7200 = """فيما يلي تجد الوثائق الحالية الخاصة بك مع الشركة:
     """
     for pol in myresult1:
         if j == 10:
@@ -577,9 +577,9 @@ def menu_2100():
     return level2100.encode("utf-8")
     
 def menu_212():
-    level212 = """Our Takaful products offerings for individuals:
+    level212 = """Our insurance products offerings for individuals:
     
-    *-* Motor Takaful for Individuals Plan
+    *-* Motor insurance for Individuals Plan
     *-* Property All Risk Plan (incl. burglary)
     *-* Family Legacy Plan
     *-* Harvest Plan (single contribution)
@@ -597,18 +597,18 @@ For more info, please click on https://www.company.c0m/our-products
     return level212
 
 def menu_2102():
-    level2102 = """عروضنا لمنتجات التكافل للأفراد تشمل اللآتي:
+    level2102 = """عروضنا لمنتجات التأمين للأفراد تشمل اللآتي:
     
     *-* التأمين على المركبات
     *-* الحريق والأخطار الإضافية
-    *-* برنامج تآزر تراث العائلة
-    *-* برنامج تآزر الحصاد
-    *-* برنامج تآزر أهداف التقاعد
-    *-* برنامج تآزر أهداف التعليم
-    *-* برنامج تآزر أهداف الإدخار
-    *-* برنامج تآزر مستقبل
-    *-* برنامج تآزر كفالة
-    *-* برنامج تآزر تواصل الدخل
+    *-* برنامج الشركة تراث العائلة
+    *-* برنامج الشركة الحصاد
+    *-* برنامج الشركة أهداف التقاعد
+    *-* برنامج الشركة أهداف التعليم
+    *-* برنامج الشركة أهداف الإدخار
+    *-* برنامج الشركة مستقبل
+    *-* برنامج الشركة كفالة
+    *-* برنامج الشركة تواصل الدخل
     
 يرجى الضغط على المرفق التالي للمزيد من المعلومات http://company.c0m/ar/our-products
 
@@ -775,7 +775,7 @@ def menu_220(mobile):
     myresult1 = mycursor1.fetchall()
     
     j = 0
-    level220 = """The following are your current active motor policies with t'azur:
+    level220 = """The following are your current active motor policies with Company:
     """
     for pol in myresult1:
         if j == 10:
@@ -812,7 +812,7 @@ def menu_2200(mobile):
     myresult1 = mycursor1.fetchall()
     
     j = 0
-    level2200 = """فيما يلي تجد الوثائق الحالية الخاصة بك مع تآزر:
+    level2200 = """فيما يلي تجد الوثائق الحالية الخاصة بك مع الشركة:
     """
     for pol in myresult1:
         if j == 10:
@@ -869,7 +869,7 @@ def menu_420(mobile):
     myresult1 = mycursor1.fetchall()
     
     j = 0
-    level420 = """The following are your current active motor policies with t'azur:
+    level420 = """The following are your current active motor policies with Company:
     """
     for pol in myresult1:
         if j == 10:
@@ -908,7 +908,7 @@ def menu_4200(mobile):
     myresult1 = mycursor1.fetchall()
     
     j = 0
-    level4200 = """فيما يلي تجد وثائق التأمين الحالية الخاصة بك مع تآزر:
+    level4200 = """فيما يلي تجد وثائق التأمين الحالية الخاصة بك مع الشركة:
     """
     for pol in myresult1:
         if j == 10:
@@ -978,7 +978,7 @@ Press *M* to return back to main menu or *Q* to quit.""",0
 Please contact our Call Center on 17xxxxxx for assistance. 
 Press *M* to return back to main menu or *Q* to quit.""",0
     elif quotation == 5:
-        return """Sorry unable to provide a quotation because your policy is either issued by a broker or agent. Please contact your broker or agent to get the best policy renewal quotation from t'azur. 
+        return """Sorry unable to provide a quotation because your policy is either issued by a broker or agent. Please contact your broker or agent to get the best policy renewal quotation from Company. 
 Press *M* to return back to main menu or *Q* to quit.""",0
     elif quotation == 6:
         return """Sorry unable to provide a quotation because the chatbot only provides at the moment renewal quotations for regular policy types. 
@@ -1061,7 +1061,7 @@ def menu_4500(pol_no,pol_year):
 يرجى الاتصال بمركز الاتصال على 17xxxxxx خلال ساعات العمل لدينا للحصول على المساعدة.
 يمكنك إدخال "ر" للعودة إلى القائمة الرئيسية أو "خ" للخروج النهائي من المحادثة.""",0
     elif quotation == 5:
-        return """نأسف لعدم التمكن من تقديم عرض أسعار. وثيقتك صادرة عبر وسيط أو وكيل. يرجى الاتصال بالوسيط أو الوكيل للحصول على أفضل عرض أسعار لتجديد وثيقتك مع تآزر.
+        return """نأسف لعدم التمكن من تقديم عرض أسعار. وثيقتك صادرة عبر وسيط أو وكيل. يرجى الاتصال بالوسيط أو الوكيل للحصول على أفضل عرض أسعار لتجديد وثيقتك مع الشركة.
 يمكنك إدخال "ر" للعودة إلى القائمة الرئيسية أو "خ" للخروج النهائي من المحادثة.""",0
     elif quotation == 6:
         return """نأسف لعدم التمكن من تقديم عرض أسعار. برنامج المتحدث الآلي يوفر في الوقت الحالي عروض أسعار تجديد لوثائق تأمين عادية فقط.

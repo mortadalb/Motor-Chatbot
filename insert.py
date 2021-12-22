@@ -146,12 +146,12 @@ def status(branch,endt_no,endt_year,endt_type,class_of_business,office):
 
 class HelloWorld(Resource):
     def get(self):
-        return {"about":"t'azur Chatbot Web Service!"}
+        return {"about":"Chatbot Web Service!"}
 
 class Test(Resource):
     @token_required
     def get(self):
-        return {"test":"t'azur Chatbot Web Service!"}
+        return {"test":"Chatbot Web Service!"}
 
 class Payment_Status(Resource):
     @token_required
@@ -291,7 +291,7 @@ Chatbot"""
                 for schedule in myresult5:
                     client_name =       insured_ename
                     issue_dt =          str(schedule[15])
-                    tazur_vat =         str(schedule[39])
+                    xxxxx_vat =         str(schedule[39])
                     address =           str(schedule[17])
                     voh_no =            str(schedule[33])
                     broker =            str(schedule[10])
@@ -318,7 +318,7 @@ Chatbot"""
                 try:    
                     generateDnPdf('dn_add.html','prints/Tax_Invoice-'+str(params[0])+'-'+str(params[1])+'.pdf',{"name":                  client_name,
                                                                                                                 "date":                  datetime.strptime(((issue_dt.__str__()).split(" "))[0], '%Y-%m-%d').strftime('%d/%m/%Y'),
-                                                                                                                "tazur_vat":             tazur_vat,            
+                                                                                                                "xxxxx_vat":             xxxxx_vat,            
                                                                                                                 "address":               address,
                                                                                                                 "voucher_no":            voh_no,                 
                                                                                                                 "broker":                broker,
@@ -466,7 +466,7 @@ Chatbot"""
                         endt_no =           schedule[5]
                         endt_year =         schedule[6]
                         voh_no =            str(schedule[33])
-                        tazur_vat =         str(schedule[39])
+                        xxxxx_vat =         str(schedule[39])
                         acc_no =            str(schedule[45])
                         cust_vat =          str(schedule[46])
                         cust_no =           str(schedule[37])
@@ -508,7 +508,7 @@ Chatbot"""
                     try:    
                         generateDnPdf('dn_rnw.html','prints/Tax_Invoice-'+str(params[0])+'-'+str(params[1])+'.pdf',{"name":           client_name,
                                                                                                "date":                  datetime.strptime(((issue_dt.__str__()).split(" "))[0], '%Y-%m-%d').strftime('%d/%m/%Y'),
-                                                                                               "tazur_vat":             tazur_vat,            
+                                                                                               "xxxxx_vat":             xxxxx_vat,            
                                                                                                "address":               address,
                                                                                                "voucher_no":            voh_no,                 
                                                                                                "broker":                broker,
